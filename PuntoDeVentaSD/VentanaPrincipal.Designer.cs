@@ -47,12 +47,12 @@
             this.txt_ClienteBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Factura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Cliente = new System.Windows.Forms.TextBox();
             this.btn_Facturar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_Total = new System.Windows.Forms.Label();
             this.txt_Impuesto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_Descuento = new System.Windows.Forms.TextBox();
@@ -62,8 +62,9 @@
             this.txt_Cantidad = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_Subtotal = new System.Windows.Forms.Label();
             this.btn_AddProd = new System.Windows.Forms.Button();
+            this.txt_ClienteDesc = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Principal)).BeginInit();
@@ -126,6 +127,7 @@
             this.txt_arc_Impuesto.Name = "txt_arc_Impuesto";
             this.txt_arc_Impuesto.Size = new System.Drawing.Size(100, 23);
             this.txt_arc_Impuesto.Text = "19";
+            this.txt_arc_Impuesto.Click += new System.EventHandler(this.txt_arc_Impuesto_Click);
             this.txt_arc_Impuesto.TextChanged += new System.EventHandler(this.ImpVentaYDescChanged);
             // 
             // descuentoToolStripMenuItem
@@ -207,6 +209,7 @@
             this.btn_Buscar.TabIndex = 4;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // txt_ClienteBuscar
             // 
@@ -234,14 +237,14 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "N° Factura";
             // 
-            // textBox2
+            // txt_Factura
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(12, 261);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 22);
-            this.textBox2.TabIndex = 8;
+            this.txt_Factura.Enabled = false;
+            this.txt_Factura.Location = new System.Drawing.Point(12, 261);
+            this.txt_Factura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Factura.Name = "txt_Factura";
+            this.txt_Factura.Size = new System.Drawing.Size(151, 22);
+            this.txt_Factura.TabIndex = 8;
             // 
             // label3
             // 
@@ -271,6 +274,7 @@
             this.btn_Facturar.TabIndex = 11;
             this.btn_Facturar.Text = "Facturar";
             this.btn_Facturar.UseVisualStyleBackColor = true;
+            this.btn_Facturar.Click += new System.EventHandler(this.btn_Facturar_Click);
             // 
             // label4
             // 
@@ -282,15 +286,15 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Total";
             // 
-            // label5
+            // lbl_Total
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(432, 492);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 55);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "0.00";
+            this.lbl_Total.AutoSize = true;
+            this.lbl_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Total.Location = new System.Drawing.Point(432, 492);
+            this.lbl_Total.Name = "lbl_Total";
+            this.lbl_Total.Size = new System.Drawing.Size(118, 55);
+            this.lbl_Total.TabIndex = 13;
+            this.lbl_Total.Text = "0.00";
             // 
             // txt_Impuesto
             // 
@@ -374,15 +378,15 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "Subtotal";
             // 
-            // label11
+            // lbl_Subtotal
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(256, 491);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 39);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "0.00";
+            this.lbl_Subtotal.AutoSize = true;
+            this.lbl_Subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Subtotal.Location = new System.Drawing.Point(256, 491);
+            this.lbl_Subtotal.Name = "lbl_Subtotal";
+            this.lbl_Subtotal.Size = new System.Drawing.Size(84, 39);
+            this.lbl_Subtotal.TabIndex = 23;
+            this.lbl_Subtotal.Text = "0.00";
             // 
             // btn_AddProd
             // 
@@ -395,13 +399,24 @@
             this.btn_AddProd.UseVisualStyleBackColor = true;
             this.btn_AddProd.Click += new System.EventHandler(this.btn_AddProd_Click);
             // 
+            // txt_ClienteDesc
+            // 
+            this.txt_ClienteDesc.AllowDrop = true;
+            this.txt_ClienteDesc.Enabled = false;
+            this.txt_ClienteDesc.Location = new System.Drawing.Point(15, 344);
+            this.txt_ClienteDesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_ClienteDesc.Name = "txt_ClienteDesc";
+            this.txt_ClienteDesc.Size = new System.Drawing.Size(151, 22);
+            this.txt_ClienteDesc.TabIndex = 25;
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 562);
+            this.Controls.Add(this.txt_ClienteDesc);
             this.Controls.Add(this.btn_AddProd);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl_Subtotal);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txt_Cantidad);
             this.Controls.Add(this.label9);
@@ -411,12 +426,12 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_Impuesto);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_Total);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_Facturar);
             this.Controls.Add(this.txt_Cliente);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_Factura);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_ClienteBuscar);
@@ -453,12 +468,12 @@
         private System.Windows.Forms.TextBox txt_ClienteBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Factura;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_Cliente;
         private System.Windows.Forms.Button btn_Facturar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_Total;
         private System.Windows.Forms.TextBox txt_Impuesto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Descuento;
@@ -468,7 +483,7 @@
         private System.Windows.Forms.TextBox txt_Cantidad;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_Subtotal;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem impVentaToolStripMenuItem;
@@ -477,5 +492,6 @@
         private System.Windows.Forms.ToolStripTextBox txt_arc_Descuento;
         private System.Windows.Forms.ToolStripMenuItem historialDeFacturasToolStripMenuItem;
         private System.Windows.Forms.Button btn_AddProd;
+        private System.Windows.Forms.TextBox txt_ClienteDesc;
     }
 }

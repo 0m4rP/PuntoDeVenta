@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
+
 namespace Datos
 {
     public class ConexionMYSQL
@@ -20,9 +21,14 @@ namespace Datos
         {
             int count;
             conexion.Open();
-            string query = "Select count(*) from Persona where usuario= '"+ Usuario +"' and contrasena= '"+ Contrasena +"'";
+            string query = "Select count(*) from Persona where usuario= @usuario and contrasena= @contrasena";
 
             MySqlCommand cmd = new MySqlCommand(query, conexion);
+            //parametros
+
+            cmd.Parameters.AddWithValue("@usuario", Usuario);
+            cmd.Parameters.AddWithValue("@contrasena", Contrasena);
+
             //nos devuelve un valor el cual se convierte en int 
             count = Convert.ToInt32(cmd.ExecuteScalar());
             conexion.Close();
@@ -114,10 +120,69 @@ namespace Datos
         public string ConsultaFactura ()
         {
             conexion.Open();
-            string query = "";
+            string resultado = "Null";
+            string query = "Select (SELECT DISTINCT NumFactura FROM Facturacion ORDER BY NumFactura DESC LIMIT 1) + 1 as NumFactura;";
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+            MySqlDataReader reg = cmd.ExecuteReader();
+
+            if (reg.Read())
+            {
+                resultado = reg["NumFactura"].ToString();
+            }
+           
+
+            conexion.Close();
+            return resultado;
+
+        }
+
+        public Tuple<string, string> ConsultaLista(string codigo)
+        {
+            conexion.Open();
+            string resultado1 = "Null";
+            string resultado2 = "Null";
+            string query = "select * from Inventario where Codigo= @codigo";            
             MySqlCommand cmd = new MySqlCommand(query, conexion);
 
-            return "";
+            //parametros del query
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+
+
+            MySqlDataReader reg = cmd.ExecuteReader();
+
+            if (reg.Read())
+            {
+                resultado1 = reg["Producto"].ToString();
+                resultado2 = reg["Precio"].ToString();
+
+            }
+            conexion.Close();
+                return Tuple.Create(resultado1, resultado2);
+
+        }
+
+        public Tuple<string, double> ConsultaCliente(string codigo_cli)
+        {
+            conexion.Open();
+            string resultado1 = "Null";
+            double resultado2 = 0;
+            string query = "select concat(nombre_cliente, ' ', apellido_cliente) as Nombre,  descuento_cliente from Cliente where codigo_cliente = @codigo_cli;";
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+
+            //parametros query
+
+            cmd.Parameters.AddWithValue("@codigo_cli", codigo_cli);
+
+            MySqlDataReader reg = cmd.ExecuteReader();
+
+            if (reg.Read())
+            {
+                resultado1 = reg["Nombre"].ToString();
+                resultado2 = double.Parse(reg["descuento_cliente"].ToString());
+
+            }
+            conexion.Close();
+            return Tuple.Create(resultado1, resultado2);
 
         }
 

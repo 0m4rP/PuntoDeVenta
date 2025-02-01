@@ -50,3 +50,6 @@ D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeV
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeVentaSD.Login.resources
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeVentaSD.FormUsers.resources
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeVentaSD.Inventario.resources
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.dll
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.pdb
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.dll.config

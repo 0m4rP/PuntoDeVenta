@@ -41,3 +41,6 @@ D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\obj\Debug\Negocios.cspro
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\obj\Debug\Negocios.csproj.Up2Date
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\obj\Debug\Negocios.dll
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\obj\Debug\Negocios.pdb
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\bin\Debug\Entidades.dll
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\bin\Debug\Entidades.pdb
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Negocios\bin\Debug\Entidades.dll.config

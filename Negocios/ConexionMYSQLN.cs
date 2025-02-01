@@ -45,5 +45,19 @@ namespace Negocios
 
         }
 
+        public string ConsultaFactura()
+        {
+            return cm.ConsultaFactura();
+        }
+
+        public Tuple<string, string> ConsultaLista(string code)
+        {
+            return cm.ConsultaLista(code);
+        }
+
+        public Tuple<string, double> ConsultaCliente(string code_cli)
+        {
+            return cm.ConsultaCliente(code_cli);
+        }
     }
 }

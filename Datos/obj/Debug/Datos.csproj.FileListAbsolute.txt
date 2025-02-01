@@ -38,3 +38,6 @@ D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\obj\Debug\Datos.csproj.Core
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\obj\Debug\Datos.csproj.Up2Date
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\obj\Debug\Datos.dll
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\obj\Debug\Datos.pdb
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\bin\Debug\Entidades.dll
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\bin\Debug\Entidades.pdb
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\Datos\bin\Debug\Entidades.dll.config
