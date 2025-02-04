@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using Entidades;
+using System.Globalization;
 
 
 namespace Datos
@@ -184,6 +186,61 @@ namespace Datos
             conexion.Close();
             return Tuple.Create(resultado1, resultado2);
 
+        }
+
+        
+
+        public void InsertarFactura(List<Factura> F)
+        {
+            try
+            {
+                conexion.Open();
+
+                foreach (Factura fact in F)
+                {
+                    string query = @"INSERT INTO Facturacion (codigo_factura, producto, precio_por_unidad, cantidad, descuento, precio_total, nombre_cliente, descuento_cliente, monto_total, NumFactura) VALUES (@codigoFact, @producto, @precioPorUnidad, @cantidad, @descuento, @precioTotal, @nombreCliente, @descuentoCliente, @montoTotal, @numFactura);";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conexion);
+
+                    // Convertir y manejar el descuento
+                    double descuento;
+                    if (!double.TryParse(fact.Descuento.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out descuento))
+                    {
+                        descuento = 0.00; // Valor por defecto si la conversión falla
+                    }
+
+                    // Verificar que el nombre del cliente no sea nulo o vacío
+                    if (string.IsNullOrEmpty(fact.Cliente))
+                    {
+                        fact.Cliente = "Cliente no especificado"; // Valor por defecto
+                    }
+
+                    // Agregar parámetros
+                    cmd.Parameters.AddWithValue("@codigoFact", fact.Codigo);
+                    cmd.Parameters.AddWithValue("@producto", fact.Producto);
+                    cmd.Parameters.AddWithValue("@precioPorUnidad", Convert.ToDouble(fact.PrecioXProducto));
+                    cmd.Parameters.AddWithValue("@cantidad", Convert.ToInt32(fact.Cantidad));
+                    cmd.Parameters.AddWithValue("@descuento", descuento);
+                    cmd.Parameters.AddWithValue("@precioTotal", Convert.ToDouble(fact.PrecioTotal));
+                    cmd.Parameters.AddWithValue("@nombreCliente", fact.Cliente);
+                    cmd.Parameters.AddWithValue("@descuentoCliente", Convert.ToDouble(fact.ClienteDesc));
+                    cmd.Parameters.AddWithValue("@montoTotal", Convert.ToDouble(fact.Total));
+                    cmd.Parameters.AddWithValue("@numFactura", Convert.ToInt32(fact.NFactura));
+
+                    // Ejecutar la consulta
+                    cmd.ExecuteNonQuery();
+
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
     }

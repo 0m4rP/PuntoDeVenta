@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Drawing.Printing;
 using Negocios;
 using Entidades;
 
@@ -22,7 +23,7 @@ namespace PuntoDeVentaSD
         private double subtotal = 0;
         private double total = 0;
         private double desc = 0;
-        private string cliente = "";
+        
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -130,11 +131,15 @@ namespace PuntoDeVentaSD
         private void btn_Facturar_Click(object sender, EventArgs e)
         {
 
-            Factura fact = new Factura();
             List<Factura> factos = new List<Factura>();
+
 
             foreach (DataRow row in dt.Rows)
             {
+
+                Factura fact = new Factura();
+
+
             
                 fact.Codigo = row["Codigo"].ToString();
                 fact.Producto = row["Producto"].ToString();
@@ -142,17 +147,35 @@ namespace PuntoDeVentaSD
                 fact.Cantidad = row["Cantidad"].ToString();
                 fact.Descuento = row["Descuento"].ToString();
                 fact.PrecioTotal = row["Precio total"].ToString();
-                fact.SubTotal = subtotal.ToString();
-                fact.Cliente = cliente.ToString();
+                fact.SubTotal = subtotal.ToString(); //no se guarda en db
+                fact.Cliente = txt_Cliente.Text;
                 fact.ClienteDesc = desc.ToString();
                 fact.Total = total.ToString();
                 fact.NFactura = txt_Factura.Text;
 
                 factos.Add(fact);
 
+                
+
             }
 
-            MessageBox.Show(factos.Count().ToString());
+            cn.InsertarFactura(factos);
+            txt_Factura.Text = cn.ConsultaFactura();
+
+            MessageBox.Show("Facturado exitosamente");
+
+            printDocument1 = new PrintDocument();
+            PrinterSettings ps = new PrinterSettings();
+            printDocument1.PrinterSettings = ps;
+            printDocument1.PrintPage += Imprimir;
+            printDocument1.Print();
+        }
+
+        private void Imprimir(object sender, PrintPageEventArgs e)
+        {
+
+
+
         }
     }
 }

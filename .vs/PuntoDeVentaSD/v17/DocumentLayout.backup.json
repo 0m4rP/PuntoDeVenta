@@ -7,44 +7,36 @@
       "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E67E82A4-CE86-450E-B245-2C02D5BF47A6}|Datos\\Datos.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\datos\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E67E82A4-CE86-450E-B245-2C02D5BF47A6}|Datos\\Datos.csproj|solutionrelative:datos\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40AE97AF-D1C5-44D7-9B5A-7B260D8E6A80}|Negocios\\Negocios.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\negocios\\conexionmysqln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40AE97AF-D1C5-44D7-9B5A-7B260D8E6A80}|Negocios\\Negocios.csproj|solutionrelative:negocios\\conexionmysqln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40AE97AF-D1C5-44D7-9B5A-7B260D8E6A80}|Negocios\\Negocios.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\negocios\\conexionmysqln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40AE97AF-D1C5-44D7-9B5A-7B260D8E6A80}|Negocios\\Negocios.csproj|solutionrelative:negocios\\conexionmysqln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBEA6073-EE0F-4BA3-8C48-AF6D62B1E0D0}|Entidades\\Entidades.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\entidades\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBEA6073-EE0F-4BA3-8C48-AF6D62B1E0D0}|Entidades\\Entidades.csproj|solutionrelative:entidades\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A63C870-EFEE-4360-B44F-AB7F0573D474}|PuntoDeVentaSD\\PuntoDeVentaSD.csproj|solutionrelative:puntodeventasd\\formusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,20 +50,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FormUsers.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\FormUsers.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\FormUsers.cs",
               "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\FormUsers.cs",
               "RelativeToolTip": "PuntoDeVentaSD\\FormUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwB8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T03:34:22.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FormUsers.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\FormUsers.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\FormUsers.cs",
@@ -89,7 +81,7 @@
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\VentanaPrincipal.cs",
               "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\VentanaPrincipal.cs*",
               "RelativeToolTip": "PuntoDeVentaSD\\VentanaPrincipal.cs*",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAowKMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T14:40:28.609Z",
               "EditorCaption": ""
@@ -102,14 +94,14 @@
               "RelativeDocumentMoniker": "Datos\\ConexionMYSQL.cs",
               "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\Datos\\ConexionMYSQL.cs",
               "RelativeToolTip": "Datos\\ConexionMYSQL.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAiwLQAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAANYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T02:37:16.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VentanaPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\VentanaPrincipal.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\VentanaPrincipal.cs",
@@ -121,44 +113,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Login.cs",
-              "RelativeDocumentMoniker": "PuntoDeVentaSD\\Login.cs",
-              "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Login.cs",
-              "RelativeToolTip": "PuntoDeVentaSD\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T03:00:29.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ConexionMYSQLN.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\Negocios\\ConexionMYSQLN.cs",
               "RelativeDocumentMoniker": "Negocios\\ConexionMYSQLN.cs",
               "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\Negocios\\ConexionMYSQLN.cs",
               "RelativeToolTip": "Negocios\\ConexionMYSQLN.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwDkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T02:37:51.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Inventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Inventario.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\Inventario.cs",
               "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Inventario.cs [Dise\u00F1o]",
               "RelativeToolTip": "PuntoDeVentaSD\\Inventario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T02:13:33.882Z"
+              "WhenOpened": "2025-01-29T02:13:33.882Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Inventario.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Inventario.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\Inventario.cs",
@@ -166,23 +146,12 @@
               "RelativeToolTip": "PuntoDeVentaSD\\Inventario.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAqwBUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T02:21:16.699Z"
+              "WhenOpened": "2025-01-29T02:21:16.699Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\Entidades\\Class1.cs",
-              "RelativeDocumentMoniker": "Entidades\\Class1.cs",
-              "ToolTip": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\Entidades\\Class1.cs",
-              "RelativeToolTip": "Entidades\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:37:35.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\Proyectos\\PuntoDeVentaSD\\PuntoDeVentaSD\\Login.cs",
               "RelativeDocumentMoniker": "PuntoDeVentaSD\\Login.cs",

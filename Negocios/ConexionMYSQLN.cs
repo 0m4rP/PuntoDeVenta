@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
+using Entidades;
 using MySql.Data.MySqlClient;
 
 namespace Negocios
@@ -58,6 +59,11 @@ namespace Negocios
         public Tuple<string, double> ConsultaCliente(string code_cli)
         {
             return cm.ConsultaCliente(code_cli);
+        }
+
+        public void InsertarFactura(List<Factura> F)
+        {
+            cm.InsertarFactura(F);
         }
     }
 }

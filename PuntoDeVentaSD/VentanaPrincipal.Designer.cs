@@ -65,6 +65,7 @@
             this.lbl_Subtotal = new System.Windows.Forms.Label();
             this.btn_AddProd = new System.Windows.Forms.Button();
             this.txt_ClienteDesc = new System.Windows.Forms.TextBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Principal)).BeginInit();
@@ -409,6 +410,10 @@
             this.txt_ClienteDesc.Size = new System.Drawing.Size(151, 22);
             this.txt_ClienteDesc.TabIndex = 25;
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.Imprimir);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -493,5 +498,6 @@
         private System.Windows.Forms.ToolStripMenuItem historialDeFacturasToolStripMenuItem;
         private System.Windows.Forms.Button btn_AddProd;
         private System.Windows.Forms.TextBox txt_ClienteDesc;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
