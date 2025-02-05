@@ -173,9 +173,28 @@ namespace PuntoDeVentaSD
 
         private void Imprimir(object sender, PrintPageEventArgs e)
         {
+            Font font = new Font("Arial", 14);
+            int ancho = 300;
+            int y = 20;
 
+            e.Graphics.DrawString("---Punto de venta---", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("Factura # " + txt_Factura.Text, font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("Cliente: " + txt_Cliente.Text, font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("---Productos---", font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
 
+            foreach (DataRow row in dt.Rows)
+            {
 
+                e.Graphics.DrawString(row["Codigo"].ToString() + " | " +
+                    row["Producto"].ToString() + " | $" +
+                    row["Precio total"].ToString(), font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+
+            }
+
+            e.Graphics.DrawString("Subtotal: " + subtotal.ToString(), font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+            e.Graphics.DrawString("--- Total: " + total.ToString(), font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+
+            e.Graphics.DrawString("---Gracias por visitarnos---", font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20));
         }
     }
 }
