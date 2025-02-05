@@ -66,6 +66,7 @@
             this.btn_AddProd = new System.Windows.Forms.Button();
             this.txt_ClienteDesc = new System.Windows.Forms.TextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.gráficoDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Principal)).BeginInit();
@@ -169,7 +170,8 @@
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.historialDeFacturasToolStripMenuItem});
+            this.historialDeFacturasToolStripMenuItem,
+            this.gráficoDeVentasToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -414,6 +416,13 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.Imprimir);
             // 
+            // gráficoDeVentasToolStripMenuItem
+            // 
+            this.gráficoDeVentasToolStripMenuItem.Name = "gráficoDeVentasToolStripMenuItem";
+            this.gráficoDeVentasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.gráficoDeVentasToolStripMenuItem.Text = "Gráfico de ventas";
+            this.gráficoDeVentasToolStripMenuItem.Click += new System.EventHandler(this.gráficoDeVentasToolStripMenuItem_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -499,5 +508,6 @@
         private System.Windows.Forms.Button btn_AddProd;
         private System.Windows.Forms.TextBox txt_ClienteDesc;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.ToolStripMenuItem gráficoDeVentasToolStripMenuItem;
     }
 }

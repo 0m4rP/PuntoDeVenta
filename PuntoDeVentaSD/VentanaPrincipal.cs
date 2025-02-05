@@ -196,5 +196,13 @@ namespace PuntoDeVentaSD
 
             e.Graphics.DrawString("---Gracias por visitarnos---", font, Brushes.Black, new RectangleF(0, y += 40, ancho, 20));
         }
+
+        private void gráficoDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Grafico grafico = new Grafico();
+            this.Hide();
+            grafico.ShowDialog();
+            this.Show();
+        }
     }
 }

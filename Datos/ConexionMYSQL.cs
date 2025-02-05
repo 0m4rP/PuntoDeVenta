@@ -119,6 +119,17 @@ namespace Datos
             return tabla;
         }
 
+        public DataTable GraficoData()
+        {
+            string query = "select producto, Count(producto) cantidad from Facturacion group by producto;";
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+            MySqlDataAdapter data = new MySqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+
+            return tabla;
+        }
+
         public string ConsultaFactura ()
         {
             conexion.Open();

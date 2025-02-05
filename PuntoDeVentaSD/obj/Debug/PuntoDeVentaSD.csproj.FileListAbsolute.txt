@@ -53,3 +53,4 @@ D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeV
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.dll
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.pdb
 D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\bin\Debug\Entidades.dll.config
+D:\Visual Studio 2022\Proyectos\PuntoDeVentaSD\PuntoDeVentaSD\obj\Debug\PuntoDeVentaSD.Grafico.resources

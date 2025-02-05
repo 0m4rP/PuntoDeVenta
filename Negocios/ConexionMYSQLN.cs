@@ -26,6 +26,11 @@ namespace Negocios
             return cm.ConsultarUsuarios();
         }
 
+        public DataTable GraficoData()
+        {
+            return cm.GraficoData();
+        }
+
         public int AgregarUsuario(string nom, string apel, string ced, string tel, string user, string pass)
         {
 
